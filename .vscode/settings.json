@@ -1,0 +1,11 @@
+{
+  "prettier.parser": "flow",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.jsxBracketSameLine": true,
+  "prettier.bracketSpacing": false,
+  "eslint.enable": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.tabSize": 2
+}
