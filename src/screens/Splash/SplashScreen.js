@@ -1,33 +1,16 @@
 import React, { Component } from "react";
 import { ImageBackground, View, StatusBar, Dimensions } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
 import { CircleSnail } from "react-native-progress";
+import { Avatar } from 'react-native-elements';
 
 import styles from "./styles";
 import { withNavigation } from "react-navigation";
 
 const visitSumenep = require("../../../assets/img/visit-sumenep.png");
+const giliLabak = require("../../../assets/img/gili-labak.jpg");
 const width = Dimensions.get("window").width;
 
 class SplashScreen extends Component {
-  static navigationOptions = ({ navigation }) => {
-    // const { navigate } = navigation;
-    // setTimeout(function () {
-    //     navigate("VrExample");
-    // }, 3000);
-    return {
-      title: "Splash Screen",
-      headerStyle: {
-        backgroundColor: "transparent",
-        position: "absolute",
-        height: 50,
-        top: 0,
-        left: 0,
-        right: 0
-      },
-      headerTintColor: "#fff"
-    };
-  };
 
   componentDidMount() {
     const { replace } = this.props.navigation;
@@ -39,11 +22,11 @@ class SplashScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <LinearGradient
-          colors={["#40c4ff", "#1de9b6"]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 0.6, y: 0.6 }}
-          style={{ flex: 1, width: width }}
+        <ImageBackground
+          source={giliLabak}
+          style={{ flex: 1 }}
+          resizeMode="center"
+          imageStyle={{ resizeMode: "cover" }}
         >
           <StatusBar
             barStyle="light-content"
@@ -53,7 +36,8 @@ class SplashScreen extends Component {
           />
           <View style={styles.splashContainer}>
             <View style={styles.logoContainer}>
-              <ImageBackground source={visitSumenep} style={styles.logo} />
+              {/* <ImageBackground source={visitSumenep} style={styles.logo} /> */}
+              <Avatar rounded source={visitSumenep} size='xlarge' placeholderStyle={{ backgroundColor: '#fff' }} containerStyle={{ elevation: 5 }} />
             </View>
           </View>
           <View
@@ -68,9 +52,9 @@ class SplashScreen extends Component {
               marginLeft: (width - 40) / 2
             }}
           >
-            <CircleSnail color={["red", "green", "blue"]} />
+            <CircleSnail color={["red", "green", "blue", "black"]} />
           </View>
-        </LinearGradient>
+        </ImageBackground>
       </View>
     );
   }

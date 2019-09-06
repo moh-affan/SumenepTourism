@@ -13,7 +13,7 @@ export default {
         marginTop: deviceHeight / 8,
         marginBottom: 30,
         // justifyContent: "center",
-        alignItems: "center",
+        alignItems: 'center',
     },
     logo: {
         // position: "absolute",
@@ -32,10 +32,11 @@ export default {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        width: Dimensions.get('window').width
     },
     splashContainer: {
         flex: 1,
-        width: null,
-        height: null
+        width: Dimensions.get('window').width,
+        height: deviceHeight
     },
 };
