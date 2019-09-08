@@ -22,18 +22,18 @@ class SplashScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          hidden={true}
+          showHideTransition={true}
+          animated={true}
+        />
         <ImageBackground
           source={giliLabak}
           style={{ flex: 1 }}
           resizeMode="center"
           imageStyle={{ resizeMode: "cover" }}
         >
-          <StatusBar
-            barStyle="light-content"
-            hidden={true}
-            showHideTransition={true}
-            animated={true}
-          />
           <View style={styles.splashContainer}>
             <View style={styles.logoContainer}>
               {/* <ImageBackground source={visitSumenep} style={styles.logo} /> */}
