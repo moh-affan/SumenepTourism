@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/img/gili-labak.jpg",
+      "sha1": "e89d4fdcd5cf8b5be504b321b3275fa9891dec51"
+    },
+    {
+      "path": "assets/img/visit-sumenep.png",
+      "sha1": "ea707fe3f90a7dc0fb174104c1bdadf59e2873e2"
+    },
+    {
+      "path": "assets/img/vr.png",
+      "sha1": "ee65a6eb07606dc459028b549245a6ebffbb4944"
+    }
+  ]
+}
