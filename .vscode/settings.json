@@ -7,5 +7,6 @@
   "eslint.enable": false,
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "always",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false
 }
