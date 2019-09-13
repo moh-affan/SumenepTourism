@@ -3,6 +3,7 @@ import { ImageBackground, Image, View, StatusBar, Dimensions } from "react-nativ
 import { CircleSnail } from "react-native-progress";
 import { Avatar, Card } from 'react-native-elements';
 import LinearGradient from "react-native-linear-gradient";
+import NavigationBar from 'react-native-navbar-color'
 
 import styles from "./styles";
 import { withNavigation } from "react-navigation";
@@ -16,6 +17,7 @@ const borderRadiusValue = 50;
 class SplashScreen extends Component {
 
   componentDidMount() {
+    NavigationBar.setColor('#CEEFFD');
     const { replace } = this.props.navigation;
     setTimeout(function () {
       replace("VrExample");
@@ -32,10 +34,9 @@ class SplashScreen extends Component {
           style={{ flex: 1, width: width }}
         >
           <StatusBar
-            barStyle="light-content"
-            hidden={true}
-            showHideTransition={true}
-            animated={true}
+            barStyle="dark-content"
+            translucent
+            backgroundColor='transparent'
           />
           <ImageBackground
             backgroundColor='transparent'

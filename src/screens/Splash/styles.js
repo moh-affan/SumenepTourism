@@ -32,7 +32,8 @@ export default {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        width: Dimensions.get('window').width
+        width: Dimensions.get('window').width,
+        height: deviceHeight
     },
     splashContainer: {
         flex: 1,

@@ -5,6 +5,7 @@ import { View, Dimensions, SafeAreaView, Image, ToastAndroid } from "react-nativ
 import { Card, Icon, Button } from "react-native-elements";
 import { CurvedBottomHeader } from "../../components";
 import LinearGradient from "react-native-linear-gradient";
+import NavigationBar from 'react-native-navbar-color'
 
 const width = Dimensions.get("window").width;
 const vr = require("../../../assets/img/vr.png");
@@ -13,6 +14,10 @@ export default class VrExample extends Component {
 
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount(){
+    NavigationBar.setColor('#199FF9');
   }
 
   onMenuClick = () => {
